@@ -39,3 +39,24 @@ td {
     width: 20%;
     padding: 10px 10px;
 }
+
+div {
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    padding: 25px;
+}
+
+a {
+    color: rgb(41, 99, 153);
+    text-decoration: none;
+}
+
+#buttons-hbox {
+    background-color: rgba(41, 153, 112, 0.6);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}

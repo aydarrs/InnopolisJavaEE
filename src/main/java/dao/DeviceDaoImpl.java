@@ -37,6 +37,7 @@ public class DeviceDaoImpl implements MetrologyDao<Device> {
                 statement.setString(5, item.getCalibrationDate());
                 statement.executeUpdate();
 
+                logger.info("New device {} added", item);
                 return true;
             }
         } catch (SQLException e) {
@@ -77,6 +78,7 @@ public class DeviceDaoImpl implements MetrologyDao<Device> {
             rowSet.updateString("calibration_date", item.getCalibrationDate());
             rowSet.updateRow();
 
+            logger.info("device {} updated", item);
             return true;
 
         } catch (SQLException e) {
@@ -92,6 +94,8 @@ public class DeviceDaoImpl implements MetrologyDao<Device> {
             rowSet.execute();
             rowSet.next();
             rowSet.deleteRow();
+
+            logger.info("Deleted device id {}", id);
             return true;
 
         } catch (SQLException e) {

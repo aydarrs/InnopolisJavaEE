@@ -1,0 +1,29 @@
+form {
+
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 25px;
+}
+
+h3 {
+    border-bottom: 2px solid rgba(82, 201, 217, 50);
+}
+
+div {
+    margin-left: 100px;
+    text-align: left;
+    padding: 10px;
+}
+
+button {
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(41, 153, 112, 0.6);
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
