@@ -129,6 +129,7 @@ public class DeviceDaoImpl implements MetrologyDao<Device> {
      */
     private Device createDeviceByTableData(JdbcRowSet rowSet) throws SQLException {
         Device device;
+        long id = rowSet.getLong("id");
         String name = rowSet.getString("name");
         String model = rowSet.getString("model");
         String registryNumber = rowSet.getString("registry_number");
@@ -139,6 +140,7 @@ public class DeviceDaoImpl implements MetrologyDao<Device> {
         device.setRegistryNumber(registryNumber);
         device.setSerialNumber(serialNumber);
         device.setCalibrationDate(calibrationDate);
+        device.setId(id);
         return device;
     }
 }

@@ -22,6 +22,8 @@
     <mockito.version>3.3.3</mockito.version>
     <log4j.version>2.13.3</log4j.version>
     <postgres.version>42.2.5</postgres.version>
+    <javaee-api.version>8.0.1</javaee-api.version>
+    <jstl.version>1.2</jstl.version>
   </properties>
 
   <dependencies>
@@ -55,6 +57,25 @@
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>${postgres.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>${javaee-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet-shaded -->
+    <dependency>
+      <groupId>org.jboss.weld.servlet</groupId>
+      <artifactId>weld-servlet-shaded</artifactId>
+      <version>3.1.1.Final</version>
     </dependency>
   </dependencies>
 

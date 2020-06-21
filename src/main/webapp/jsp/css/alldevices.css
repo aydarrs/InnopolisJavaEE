@@ -1,0 +1,41 @@
+table {
+    margin: auto;
+    width: 85%;
+    border-collapse: collapse;
+}
+thead {
+    width: 20%;
+    padding: 10px 10px;
+}
+
+tbody {
+    border-top: 2px solid rgba(82, 201, 217, 50);
+}
+
+th {
+    width: 20%;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+#idTh{
+    width: 5px;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+#idTd{
+    width: 5px;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+tr {
+    width: 20%;
+    padding: 10px 10px;
+}
+
+td {
+    width: 20%;
+    padding: 10px 10px;
+}

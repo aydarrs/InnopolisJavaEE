@@ -20,7 +20,14 @@ public class ConnectionManager {
     private static final String USER = "postgres";
     private static final String PASSWORD = "qwerty";
 
-    protected ConnectionManager() {}
+    protected ConnectionManager() {
+        try {
+            // Tomcat need that
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            logger.error("JDBC driver error", e);
+        }
+    }
 
     protected Connection getConnection() {
         Connection connection = null;

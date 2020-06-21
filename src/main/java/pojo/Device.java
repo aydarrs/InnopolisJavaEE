@@ -11,6 +11,7 @@ public class Device {
     private String registryNumber;
     private String serialNumber;
     private String calibrationDate;
+    private long id;
 
     public Device(String name, String model) {
         this.name = name;
@@ -47,6 +48,14 @@ public class Device {
 
     public void setCalibrationDate(String calibrationDate) {
         this.calibrationDate = calibrationDate;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     @Override
